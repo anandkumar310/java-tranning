@@ -20,7 +20,7 @@
  *              }
  */
 import java.util.*;
-public class loop {
+/*public class loop {
     public static void main(String[] args) {
         Scanner obj=new Scanner(System.in);
         int n ,t;
@@ -33,6 +33,27 @@ public class loop {
            i++;
         }
     }
+   }*/
+
+public class loop {
+   public static void main(String[] args) {
+       Scanner obj=new Scanner(System.in);
+       int n,t=0,i;
+       System.out.print("Enter any number to print any number=");
+       n=obj.nextInt();
+       
+      for(i=1;i<=n;i++){
+      if(n%i==0){
+         t++;
+      }
+      }
+      if(t<=2){
+         System.out.println("number is prime ");
+      }
+      else{
+         System.out.println("number is not prime");
+      }
+   }
 }
 
 //----Factorial------
