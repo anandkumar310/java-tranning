@@ -34,7 +34,7 @@ import java.util.*;
         }
     }
    }*/
-
+//-------Cheak num is prime or not---------
 public class loop {
    public static void main(String[] args) {
        Scanner obj=new Scanner(System.in);
