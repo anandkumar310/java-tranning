@@ -198,22 +198,63 @@
         }
     }
 */
-public class nestloop {
+
+/*
+           1
+          232
+         34543
+        4567654
+       567898765
+ */
+/*public class nestloop {
     public static void main(String[] args) {
-        int i,j ,a=1;
-        for (i=1;i<=5;i++) {
-            for(j=i;j<=5;j++)
-            {
+        int i,j ,p;
+        for(i=1;i<=5;i++){
+            for(j=1;j<=5-i;j++){
                 System.out.print(" ");
             }
-            for(j=1;j<=(i*2)-1;j++)
-            {
-                System.out.print(a);
-                a++;
+            p=i;
+            for(j=1;j<=i;j++){
+             System.out.print(p++);   
             }
-            
+
+            p=p-2;
+            for(j=1; j<=i-1;j++){
+                System.out.print(p--);
+            }
             System.out.println();
         }
+       
+    }
+}*/
+
+/*
+          1
+        1 2 1
+      1 2 3 2 1
+    1 2 3 4 3 2 1
+ */
+public class nestloop {
+    public static void main(String[] args) {
+        int i,j ,k,l;
+        for(i=1;i<=5;i++){
+            for(j=5;j>i;j--){
+                System.out.print(" ");
+            }
+            
+            for(k=1;k<=i;k++){
+             System.out.print(k);   
+            }
+
+            
+            for(l=i-1; l>=1;l--){
+                System.out.print(l);
+            }
+            System.out.println();
+        }
+       
     }
 }
+
+
 
