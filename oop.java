@@ -104,6 +104,8 @@ public class oop {
     }
 }*/
 
+
+
 /*
    Constructor: conastructor is a special type of method which is used to instansilate 
    class member. constructor call implicity i.e 
@@ -112,9 +114,94 @@ public class oop {
 
    > There are two type of constructor
         1: Default constructor.
+            >Syntax
+                access specifier constructor_name()
+                {
+                    .....
+                    .....
+                }
         2.parameter Constructor.
+            Syntax:
+                access specifier constructor _name(Argunment)
+                {
+                    ....
+                    ....               
+                }
  */
 
 
+//======Bydefault constructor program==========
+
+/*public class oop {
+        oop(){
+            System.out.println("It is constructor");
+        }
+    void diplay(){
+        System.out.println("normal function difined");
+    }
+
+}
+    class Main{
+    public static void main(String args[]){
+     
+        oop obj=new oop();
+        obj.diplay();
+        
+    }
+}
+*/
+
+
+//=======Argunment constructor program ============
+
+/*public class oop {
+    oop(int a,int b){
+        a=10;
+        b=20;
+        int c=a+b;
+        System.out.println("It is argument constructor="+c);
+    }
+void diplay(){
+    System.out.println("normal function difined");
+}
+
+}
+class Main{
+public static void main(String args[]){
+ 
+    oop obj=new oop(10,20);
+    //obj.diplay();
     
+}
+}*/
+
+
+//=========Arae of rectangle by paramitrise constructor=========
+
+/*import java.util.*;
+
+public class oop{
+    int len, bre;
+    oop(int a, int b)
+    {
+        len=a;
+        bre=b;
+    }
+    void area()
+    {
+        int a=len*bre;
+        System.out.println("Area of rectangle="+a);
+    }
+}
+class Main{
+    public static void main(String[] args) {
+        System.out.println("Enter length breath of rectangle=");
+        int l,b;
+        Scanner sc=new Scanner(System.in);
+        l=sc.nextInt();
+        b=sc.nextInt();
+        oop obj= new oop(l, b);
+        obj.area();
+    }
+}*/
 
