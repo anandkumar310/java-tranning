@@ -38,7 +38,7 @@
 */
 
 //========overloading all type program=============
-import java.util.*;
+/*import java.util.*;
 
 class overloading{
     int x,y;
@@ -98,5 +98,56 @@ class Main{
         obj.disp(a,b);
         obj.disp(a,c);
         obj.disp(b,c);
+    }
+}
+*/
+
+//=========== constructor overloading =============
+
+import java.util.*;
+
+class overloading{
+    int x,y;
+    float a,b;
+    overloading(){
+        System.out.println("default constructor");
+    }
+     
+     overloading(int a, int b)
+    {
+        x=a;
+        y=b;
+
+    }
+     overloading(float x,float y){
+        a=x;
+        b=y;
+    }
+    void area(){
+        System.out.println("area="+x*y);
+    }
+    void areafloat(){
+        System.out.println("areafloat="+a*b);
+    }
+
+}
+class Main{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a,b;
+        float c,d;
+        System.out.print("Enter two integer value=");
+        a=sc.nextInt();
+        b=sc.nextInt();
+        System.out.print("Enter two float value=");
+        c=sc.nextFloat();
+        d=sc.nextFloat();
+
+        overloading obj= new overloading();
+        overloading obj1= new overloading(a,b);
+        overloading obj3=new overloading(c,d);
+        obj1.area();
+        obj3.areafloat();
+      
     }
 }
